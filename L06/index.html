@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg-color" style="margin-bottom:0px;">
+        <div class="container-fluid">
+            <img src="images/Logo.png" alt="SOI" class="logo">
+            <a class="navbar-brand" href="#">Learning Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"><span
+                    class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
+                    <li class="dropdown nav-item">
+                        <a href="javascript:void(0)" class="dropbtn nav-link">Course</a>
+                        <div class="dropdown-content">
+                            <a href="#">HTML</a>
+                            <a href="#">CSS</a>
+                            <a href="#">PHP</a>
+                            <a href="#">JavaScript</a>
+                            <a href="#">Python</a>
+                            <a href="#">Java</a>
+                            <a href="#">iOS</a>
+                            <a href="#">React</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" id="tags"
+                        aria-describedby="search-addon" />
+                    <span class="search-icon" id="search-addon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="noti-dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-bell bi-nav dropbtn" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+                </svg>
+                    <div class="noti-dropdown-content">
+                    <a href="#"><strong>Unread</strong> - HTML Course </a>
+                    <a href="#"><strong>Unread</strong> - CSS Course</a>
+                    <a href="#"><strong>Read</strong> - Python Course</a>
+                    <a href="#"><strong>Unread</strong> - HTML Course</a>
+                    <a href="#"><strong>Read</strong> - Java Course</a>
+                    </div>
+                  </div>
+                
+                <div class="circle-avatar">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fluid-container" style="background-color:rgba(127, 255, 165, 0.5)">
+        <!-- Add a container here for responsiveness -->
+        <div class="container">
+            <!-- Add a row here that will contain 2 columns -->
+            <div class="row" style="align-items:center;">
+                <!-- Add a column here for text -->
+                <div class="col-md-6 col-sm-12 content-col">
+                    <!-- Add a heading element here https://getbootstrap.com/docs/5.1/content/typography -->
+                    <h1>Welcome to SOI Learning Portal</h1>
+                    <!-- Add a paragraph of text here https://getbootstrap.com/docs/5.1/content/typography/#lead -->
+                    <p>Expertly crafted courses that best fit your learning needs and preferences.</p>
+                    <!-- Add a button here https://getbootstrap.com/docs/5.1/components/buttons -->
+                    <button type="button" class="btn btn-dark">Browse Courses</button>
+                    <button type="button" class="btn btn-light">Be an Instructor</button>
+                </div>
+                <!-- Add a column here for the image -->
+                <div class="col-md-6 col-sm-12" style="text-align: center;">
+                    <img src="images/person.png" alt="Person" class="img-sz">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container sub-content">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/book.png" alt="book" class="sub-icon display-inline">
+                <p class="display-inline">158 online courses<br>
+                    Enjoy a variety of fresh topics
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/user.png" alt="book" class="sub-icon display-inline">
+                <p class="display-inline">
+                    Expert instruction<br>
+                    Find the right instructor for you
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/chronometer.png" alt="book" class="sub-icon display-inline">
+                <p class="display-inline">
+                    Lifetime access<br>
+                    Learn on your schedule
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fuild-container featured-bg-color">
+        <div class="container featured-title">
+            <h1>Featured Course</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3 append-card-1">
+                            <div class="card w-100">
+                                <img src="images/html.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                    <p class="card-text">2h 30m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Hannah Lim
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark1" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-2">
+                            <div class="card w-100">
+                                <img src="images/ux.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">User Experience and Interface Design</h5>
+                                    <p class="card-text">2h 45m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Julia Lee
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark2" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-3">
+                            <div class="card w-100">
+                                <img src="images/xcode.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">iOS App Development using Xcode and Swift</h5>
+                                    <p class="card-text">4h 30m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Ryan Low
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark3" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-4">
+                            <div class="card w-100">
+                                <img src="images/frontend.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+                                    <p class="card-text">3h 45m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Azhar Kamar
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark4" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-3 append-card-5">
+                            <div class="card w-100">
+                                <img src="images/html.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introduction to HTML and CSS</h5>
+                                    <p class="card-text">2h 30m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Hannah Lim
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark5" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-6">
+                            <div class="card w-100">
+                                <img src="images/ux.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">User Experience and Interface Design</h5>
+                                    <p class="card-text">2h 45m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Julia Lee
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark6" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-7">
+                            <div class="card w-100">
+                                <img src="images/xcode.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">iOS App Development using Xcode and Swift</h5>
+                                    <p class="card-text">4h 30m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Ryan Low
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark7" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 append-card-8">
+                            <div class="card w-100">
+                                <img src="images/frontend.png" class="card-img-top" alt="Plants">
+                                <div class="card-body">
+                                    <h5 class="card-title">Front-end JavaScript Frameworks</h5>
+                                    <p class="card-text">3h 45m</p>
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person-circle mini-person" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                    Azhar Kamar
+                                    <div class="card-footer-icon">
+                                        <button class="offcanvas-btn" id="bookmark8" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                                            aria-controls="offcanvasBottom">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                        </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small row">
+                        
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <hr style="margin:70px 0px 20px 0px;">
+
+            <footer>
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="footer-copyright">© 2021 SOI Learning Portal. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="footer-right-content">
+                            <li>Privacy</li>
+                            <li>Terms</li>
+                            <li>Feedback</li>
+                            <li>Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+        <script>
+            $(function () {
+                var availableTags = [
+                    "HTML",
+                    "CSS",
+                    "PHP",
+                    "JavaScript",
+                    "Python",
+                    "Java",
+                    "iOS",
+                    "REACT"
+                ];
+                $("#tags").autocomplete({
+                    source: availableTags
+                });
+            });
+
+            $(".circle-avatar").click(function () {
+                $(".circle-avatar").toggleClass("circle-avatar2");
+            });
+
+            $("#bookmark1").click(function () {
+                $(".offcanvas-body").append($(".append-card-1").clone(true));
+            });
+            $("#bookmark2").click(function () {
+                $(".offcanvas-body").append($(".append-card-2").clone(true));
+            });
+            $("#bookmark3").click(function () {
+                $(".offcanvas-body").append($(".append-card-3").clone(true));
+            });
+            $("#bookmark4").click(function () {
+                $(".offcanvas-body").append($(".append-card-4").clone(true));
+            });
+            $("#bookmark5").click(function () {
+                $(".offcanvas-body").append($(".append-card-5").clone(true));
+            });
+            $("#bookmark6").click(function () {
+                $(".offcanvas-body").append($(".append-card-6").clone(true));
+            });
+            $("#bookmark7").click(function () {
+                $(".offcanvas-body").append($(".append-card-7").clone(true));
+            });
+            $("#bookmark8").click(function () {
+                $(".offcanvas-body").append($(".append-card-8").clone(true));
+            });
+        </script>
+
+</body>
+
+</html>
